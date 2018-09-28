@@ -35,8 +35,8 @@ int value=0;
         textView = (TextView) findViewById(R.id.textView);
         textView2 = (TextView) findViewById(R.id.textView2);
         button.setOnClickListener(this);
-        registerReceiver(mBatInfoReceiver, new IntentFilter(
-                Intent.ACTION_BATTERY_CHANGED));
+        registerReceiver(mBatInfoReceiver, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
+
     }
 
     @Override
@@ -44,6 +44,8 @@ int value=0;
         value++;
         textView.setText("Value: "+value);
 
+//        intent.putExtra("FILES_LIST", value);
+//        startActivity(intent);
 
 
     }
